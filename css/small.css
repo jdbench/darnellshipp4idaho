@@ -23,12 +23,15 @@ p, a{
 }
 .header{
     margin: -40px 0 -100px;
+    text-align: center;
 }
 .header img{
-    object-fit: cover;
+    margin: 0 auto;
+    object-fit: contain;
     object-position: center;
     width: 100%;
     max-height: 400px;
+    max-width: 960px;
 
 }
 #nav-icon{

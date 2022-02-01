@@ -1,3 +1,34 @@
-@media screen and (min-width: 600px) {
-    
+@media screen and (min-width: 960px) {
+    body{
+        font-size: 26px;
+    }
+    #nav-icon{
+        display: none;
+    }
+    nav ul{
+        margin: 0;
+        width: 100%;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul li{
+        flex: 1;
+    }
+    .nav-item a{
+        padding: 15px;
+    }
+    .main{
+        text-align: center;
+    }
+    .hero-container{
+        width: fit-content;
+    }
+    .hero-container img{
+        margin: 0 auto;
+    }
+    .hero-container img:hover{
+        box-shadow: 1px 3px 5px 1px black;
+    }
 }
