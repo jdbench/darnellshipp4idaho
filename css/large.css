@@ -25,6 +25,7 @@
     }
     .hero-container{
         width: fit-content;
+        text-align: left;
     }
     .hero-container img{
         margin: 0 auto;

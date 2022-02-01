@@ -158,32 +158,24 @@ nav ul{
     box-shadow: 1px 2px 4px 1px black;
 }
 .hero-text{
-    display: none;
-    margin: -80px 0 0 0;
-    width: 100%;
-    height: fit-content;
-    font-size: 26px;
-}
-.hero-buttons{
-    display: flex;
-    flex-grow: 1;
-    column-gap: 10px;;
-}
-.hero-button{
-    flex: 1;
-    display: flex;
-}
-.hero-button a{
-    text-align: center;
-    padding: 20px;
-    color: white;
-    text-decoration: none;
+    position: relative;
+    top: -80px;
+    bottom: 0px;
+    left: 50px;
+    right: 0px;
 }
 .hero-button a{
     background-color: rgb(8, 8, 48);
+    text-decoration: none;
+    color: white;
+    padding: 25px 35px 25px 35px;
+    box-shadow: 0 1px 4px 1px white;
+    opacity: 70%;
 }
 .hero-button a:hover{
     background-color: rgb(110, 0, 0);
+    opacity: 100%;
+    box-shadow: 1px 2px 5px 1px white;
 }
 .rotated-caret{
     margin-left: 9px;
