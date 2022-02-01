@@ -1,8 +1,14 @@
 body {
-    text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    background-color:rgba(112, 112, 112, 0.336);
+}
+h1, h2, h3, h4, span{
+    font-family: 'Roboto';
+}
+p, a{
+    font-family: 'Noto Sans Display';
 }
 #nav-icon{
     width: 60px;
@@ -91,6 +97,9 @@ nav ul{
     padding: 0;
     display: none;
     flex-direction: column;
+    position: absolute;
+    width: 40%;
+    right: 20px;
 }
 .nav-item {
     display: flex;
@@ -108,14 +117,17 @@ nav ul{
 .active {
     text-decoration: underline solid 6px;
 }
-.main{
-    margin: 0 auto;
-    width: 90%;
-}
 .hero-container{
     margin: 0 0 25px 0;
 }
+.hero-container img{
+    object-fit: fill;
+    object-position: center;
+    width: 100%;
+    box-shadow: 1px 2px 4px 1px black;
+}
 .hero-text{
+    margin: -50px 0 0 0;
     display: flex;
     justify-content: space-around;
 }
@@ -129,12 +141,26 @@ nav ul{
     background-color: rgb(110, 0, 0);
 }
 .core-values{
+    margin: 45px 0 0 0;
     display: flex;
     flex-direction: column;
+    box-shadow: 1px 2px 4px 1px black;
+}
+.core-value span{
+    padding-left: 10px;
+}
+.core-value h2{
+    padding-left: 15px;
+    display: inline-block;
 }
 .core-value{
     text-align: left;
     display: flex;
+    flex-direction: column;
+}
+.core-value.expanded{
+    display: flex;
+    flex-direction: row;
 }
 .core-value-heading{
     flex: 1;
@@ -147,4 +173,43 @@ nav ul{
 }
 .value-info{
     display:none;
+}
+.footer{
+    background: rgb(8, 8, 48);
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+}
+.footer a:hover{
+    background-color: rgb(110, 0, 0);
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.contact-info span{
+    margin-left: 28%;
+    text-align: left;
+}
+.social-media{
+    text-align: left;
+}
+.social-media span{
+    text-align: left;
+    margin-left: 28%;
+}
+.fa {
+    margin-right: 10px;
+}
+.contact-link a{
+    color: white;
+    text-decoration: none;
+}
+.social-link a{
+    color: white;
+    text-decoration: none;
 }

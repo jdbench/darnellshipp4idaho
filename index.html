@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/noto-roboto-sans.css"/>
         <link rel="stylesheet" href="css/small.css"/>
         <link rel="stylesheet" href="css/medium.css"/>
-        <link rel="stylesheet" href="css/large.ss"/>
+        <link rel="stylesheet" href="css/large.css"/>
     </head>
     <body>
         <header class="header">
@@ -31,7 +31,11 @@
         </nav>
         <main class="main">
             <div class="hero-container">
-                <img src="https://via.placeholder.com/150x150/" alt="Darnell at campaign speech">
+                <picture>
+                    <source media="(max-width:600px)" srcset="images/teton-small.jpeg">
+                    <source media="(max-width:960px)" srcset="images/teton-medium.jpeg">
+                    <img src="images/teton.jpg" alt="landscape photo from Tetons">
+                </picture>
                 <div class="hero-text">
                     <span class="hero-button donate-button"><a class="hero-link" href="donate.html">Donate</a></span>
                     <span class="hero-button getinvolved-button"><a class="hero-link" href="involve.html">Get Involved</a></span>
@@ -39,7 +43,7 @@
             </div>
             <div class="core-values">
                 <div class="core-value">
-                    <span class="core-value-heading"><h2 class="value">Family First</h2></span>
+                    <div class="core-value-heading"><span class="caret">></span><h2 class="value">Family First</h2></div>
                     <div class="value-info">
                         <h3 class="more-info-heading">Protect the Rights of the Unborn and Children</h3>
                         <div class="more-info-div">
@@ -62,7 +66,7 @@
                     </div>
                 </div>
                 <div class="core-value">
-                    <span class="core-value-heading"><h2 class="value">Truth in Education</h2></span>
+                    <div class="core-value-heading"><span class="caret">></span><h2 class="value">Truth in Education</h2></div>
                     <div class="value-info">
                         <h3 class="more-info-heading">Education Not Indoctrination</h3>
                         <div class="more-info-div">
@@ -85,7 +89,7 @@
                     </div>
                 </div>
                 <div class="core-value">
-                    <span class="core-value-heading"><h2 class="value">Limited Government</h2></span>
+                    <div class="core-value-heading"><span class="caret">></span><h2 class="value">Limited Government</h2></div>
                     <div class="value-info">
                         <h3 class="more-info-heading">Medical Freedom</h3>
                         <div class="more-info-div">
@@ -108,7 +112,7 @@
                     </div>
                 </div>
                 <div class="core-value">
-                    <span class="core-value-heading"><h2 class="value">Strengthen State Sovereignity</h2></span>
+                    <div class="core-value-heading"><span class="caret">></span><h2 class="value">Strengthen State Sovereignity</h2></div>
                     <div class="value-info">
                         <h3 class="more-info-heading">Protect Tenth Amendment</h3>
                         <div class="more-info-div">
@@ -131,7 +135,7 @@
                     </div>
                 </div>
                 <div class="core-value">
-                    <span class="core-value-heading"><h2 class="value">Strengthen and Prosper Communities</h2></span>
+                    <div class="core-value-heading"><span class="caret">></span><h2 class="value">Strengthen and Prosper Communities</h2></div>
                     <div class="value-info">
                         <h3 class="more-info-heading">Protect Local Government</h3>
                         <div class="more-info-div">
@@ -158,14 +162,14 @@
         <footer class="footer">
             <div class="contact-info">
                 <h2 class="learn">Contact Us</h2>
-                <span class="contact-link"><a class="fa fa-envelope" href="mailto:dr_shipp2b12@yahoo.com">dr_shipp2b12@yahoo.com</a></span>
-                <span class="contact-link"><a class="fa fa-phone" href="tel:+12082069487">+1(208)206-9487</a></span>
+                <span class="contact-link"><i class="fa fa-envelope"></i><a href="mailto:dr_shipp2b12@yahoo.com">dr_shipp2b12@yahoo.com</a></span>
+                <span class="contact-link"><i class="fa fa-phone"></i><a href="tel:+12082069487">+1(208)206-9487</a></span>
             </div>
             <div class="social-media">
-                <span class="social-link"><a class="fa fa-facebook" href="https://www.facebook.com/DarnellShipp4Idaho-110510968201345">DarnellShipp4Idaho</a></span>
+                <span class="social-link"><i class="fa fa-facebook"></i><a href="https://www.facebook.com/DarnellShipp4Idaho-110510968201345">DarnellShipp4Idaho</a></span>
             </div>
             <div class="footer-info">
-                <p>&copy;<span id="year"></span> | Darnell R. Shipp | Idaho | Attributions
+                <p>&copy;<span id="year"></span> | Darnell R. Shipp | Idaho
             </div>
         </footer>
         <script src="js/fontawesome.js"></script>
