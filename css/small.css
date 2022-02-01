@@ -253,3 +253,9 @@ nav ul{
     color: white;
     text-decoration: none;
 }
+/*donate page*/
+.main iframe{
+    width: 100%;
+    min-width: 400px;
+    height: 1600px;
+}
