@@ -121,7 +121,6 @@ nav ul{
     padding: 0;
     display: none;
     flex-direction: column;
-    row-gap: 5px;
     position: absolute;
     width: 25%;
     height: 25%;
@@ -130,12 +129,13 @@ nav ul{
 }
 .nav-item {
     display: flex;
+    flex: 1;
 }
 .nav-item a{
+    padding: 15% 0 0;
     flex: 1;
     color: white;
     text-decoration: none;
-    padding: 10px;
     text-align: center;
 }
 .nav-item a:hover{
