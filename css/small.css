@@ -262,3 +262,28 @@ nav ul{
     min-width: 400px;
     height: 1600px;
 }
+/*About page*/
+.darnell-main{
+    margin: 0 auto;
+    text-align: center;
+}
+.darnell-div{
+    font-size: 32px;
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+.darnell-h1{
+    background-color: rgb(110, 0, 0);
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+}
+.darnell-div p{
+    margin: 15px;
+}
+.darnell-img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
