@@ -1,6 +1,6 @@
 import { fontAwesome, createFooterYear, createFooter, createHeader } from "./utils.js";
 
-window.onload=function(){
+window.onload= async function(){
     createHeader();
     createFooter();
     createFooterYear();

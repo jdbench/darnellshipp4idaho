@@ -1,4 +1,4 @@
-export function createFooterYear(){
+export async function createFooterYear(){
     let d = new Date();
     let dd = String(d.getDate()).padStart(2, '0');
     let m = String(d.getMonth() + 1);
@@ -37,7 +37,7 @@ export function createHeader(){
 </picture>`;
 }
 
-export function fontAwesome(){
+export async function fontAwesome(){
 window.FontAwesomeKitConfig = {
     "asyncLoading": {
         "enabled": false
