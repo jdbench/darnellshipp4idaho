@@ -6,5 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     createFooterYear();
     fontAwesome();
     burger();
-    dropdownText();
+    const coreValueHeading = document.querySelectorAll('.core-value-heading');
+    coreValueHeading.forEach(value => dropdownText(value));
 });

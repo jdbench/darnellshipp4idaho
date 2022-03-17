@@ -44,14 +44,11 @@ export function burger(){
 	});
 }
 //dropdown core values
-export function dropdownText(){
-    const coreValueHeading = document.querySelectorAll('.core-value-heading');
-    coreValueHeading.forEach(value => {
-        value.addEventListener('click', function(){
+export function dropdownText(element){
+        element.addEventListener('click', function(){
             this.parentNode.getElementsByTagName('div')[1].classList.toggle('expanded');  
             this.parentNode.getElementsByTagName('div')[1].classList.toggle('value-info');
             this.querySelector('span').classList.toggle('rotated-caret');
-        });
     });
 }
 

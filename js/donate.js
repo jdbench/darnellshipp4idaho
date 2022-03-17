@@ -1,8 +1,9 @@
-import { fontAwesome, createFooterYear, createFooter, createHeader } from "./utils.js";
+import { burger, fontAwesome, createFooterYear, createFooter, createHeader } from "./utils.js";
 
-window.onload= async function(){
+document.addEventListener('DOMContentLoaded', function() {
     createHeader();
     createFooter();
     createFooterYear();
     fontAwesome();
-}
+    burger();
+});

@@ -1,4 +1,4 @@
-import { burger, fontAwesome, createFooterYear, createFooter, createHeader } from "./utils.js";
+import { dropdownText, burger, fontAwesome, createFooterYear, createFooter, createHeader } from "./utils.js";
 
 document.addEventListener('DOMContentLoaded', function() {
     createHeader();
@@ -6,4 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     createFooterYear();
     fontAwesome();
     burger();
+    const darnellDiv = document.querySelectorAll('.darnell-div-header');
+    darnellDiv.forEach(value => dropdownText(value));
 });

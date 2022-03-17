@@ -156,8 +156,8 @@ nav ul{
     display: none;
     flex-direction: column;
     position: absolute;
-    width: 25%;
-    height: 25%;
+    width: 100px;
+    height: 200px;
     right: 20px;
     top: 100px;
 }
@@ -166,9 +166,9 @@ nav ul{
     flex: 1;
 }
 .nav-item a{
-    padding: 15% 0 0;
-    flex: 1;
-    color: white;
+    flex:1;
+    padding: 20px;
+    color: #ffffff;
     text-decoration: none;
     text-align: center;
 }
@@ -202,15 +202,15 @@ nav ul{
 .hero-button a{
     background-color: rgb(8, 8, 48);
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     padding: 25px 35px 25px 35px;
-    box-shadow: 0 1px 4px 1px white;
+    box-shadow: 0 1px 4px 1px #ffffff;
     opacity: 70%;
 }
 .hero-button a:hover{
     background-color: rgb(110, 0, 0);
     opacity: 100%;
-    box-shadow: 1px 2px 5px 1px white;
+    box-shadow: 1px 2px 5px 1px #ffffff;
 }
 .rotated-caret{
     margin-left: 9px;
@@ -240,7 +240,7 @@ nav ul{
 .core-value-heading{
     flex: 1;
     background-color: rgb(110, 0, 0);
-    color: white;
+    color: #ffffff;
     cursor: pointer;
 }
 .core-value-heading:hover {
@@ -252,13 +252,14 @@ nav ul{
 .more-info-heading{
     margin: 0;
     flex: 1;
-    background-color: rgb(8, 8, 48);
+    background-color: lightgray;
     padding: 15px;
-    color: white;
+    color: black;
+    box-shadow: 0px 1px 4px 1px black;
 }
 .footer{
     background: rgb(8, 8, 48);
-    color: white;
+    color: #ffffff;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -277,11 +278,11 @@ nav ul{
     margin-right: 10px;
 }
 .contact-link a{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 .social-link a{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 /*donate page*/
@@ -296,14 +297,46 @@ nav ul{
     text-align: center;
 }
 .darnell-div{
+    padding: 15px 0 0 0;
+    width: 100%;
     font-size: 32px;
     max-width: 960px;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+.darnell-div-header{
+    width: 100%;
+    margin: 15px;
+}
+.darnell-div-header h2{
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+.darnell-div > div{
+    flex:1;
+    background-color: rgb(110, 0, 0);
+    color: #ffffff;
+    box-shadow: 0px 1px 4px 1px black;
+    margin: 0 20px 0 20px;
+}
+.darnell-div div p{
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+.darnell-div > div:hover{
+    cursor: pointer;
+    background-color: rgb(8, 8, 48);
 }
 .darnell-h1{
     background-color: rgb(110, 0, 0);
-    color: white;
+    color: #ffffff;
     font-size: 40px;
     padding: 10px;
 }
@@ -311,6 +344,7 @@ nav ul{
     margin: 15px;
 }
 .darnell-img{
+    box-shadow: 0px 1px 4px 1px black;
     margin: auto;
     object-fit: contain;
     object-position: center;
