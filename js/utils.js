@@ -37,6 +37,34 @@ export function createHeader(){
 </picture>`;
 }
 
+export function burger(){
+    document.querySelector('#nav-icon').addEventListener('click', function(){
+		this.classList.toggle('open');
+        document.querySelector('.main-nav').classList.toggle('flex');
+	});
+}
+//dropdown core values
+export function dropdownText(){
+    const coreValueHeading = document.querySelectorAll('.core-value-heading');
+    coreValueHeading.forEach(value => {
+        value.addEventListener('click', function(){
+            this.parentNode.getElementsByTagName('div')[1].classList.toggle('expanded');  
+            this.parentNode.getElementsByTagName('div')[1].classList.toggle('value-info');
+            this.querySelector('span').classList.toggle('rotated-caret');
+        });
+    });
+}
+
+export function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+} 
+
 export async function fontAwesome(){
 window.FontAwesomeKitConfig = {
     "asyncLoading": {
