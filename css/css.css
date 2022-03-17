@@ -375,7 +375,7 @@ nav ul{
         font-size: 22px;
     }
     .donations{
-        height:1210px;
+        height:1260px;
     }
 }
 @media screen and (min-width: 960px) {
@@ -418,6 +418,6 @@ nav ul{
         text-align: center;
     }
     .donations{
-        height: 1000px;
+        min-height: 1100px;
     }
 }
