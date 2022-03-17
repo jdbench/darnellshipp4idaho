@@ -8,20 +8,11 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <meta name="description" content="Darnell R Shipp's candidacy website"/>
         <link rel="stylesheet" href="css/normalize.css"/>
-        <link rel="stylesheet" href="css/noto-roboto-sans.css"/>
-        <link rel="stylesheet" href="css/small.css"/>
-        <link rel="stylesheet" href="css/medium.css"/>
-        <link rel="stylesheet" href="css/large.css"/>
+        <link rel="stylesheet" href="css/css.css"/>
+        <script src="js/donate.js" type="module"></script>
     </head>
     <body>
-        <header class="header">
-            <picture>
-                <source media="(max-width:600px)" srcset="images/small-logo.png">
-                <source media="(max-width:960px)" srcset="images/medium-logo.png">
-                <source media="(min-width:960px)" srcset="images/large-logo.png">
-                <img src="images/logo.png" alt="campaign logo">
-            </picture>
-        </header>
+        <header class="header" id="main-header"></header>
         <div id="nav-icon">
             <span></span>
             <span></span>
@@ -37,21 +28,7 @@
         <main class="main">
             <iframe src="https://rallypay.com/covers/8fX1xcjsKLq/contribute" title="Donate to Darnell's Campaign"></iframe>
         </main>
-        <footer class="footer">
-            <div class="contact-info">
-                <h2 class="learn">Contact Information</h2>
-                <span class="contact-link"><i class="fa fa-envelope"></i><a href="mailto:dr_shipp2b12@yahoo.com">dr_shipp2b12@yahoo.com</a></span>
-                <span class="contact-link"><i class="fa fa-phone"></i><a href="tel:+12082069487">+1(208)206-9487</a></span>
-            </div>
-            <div class="social-media">
-                <span class="social-link"><i class="fa fa-facebook"></i><a href="https://www.facebook.com/DarnellShipp4Idaho-110510968201345">DarnellShipp4Idaho</a></span>
-            </div>
-            <div class="footer-info">
-                <p>&copy;<span id="year"></span> | Darnell R. Shipp | Idaho
-            </div>
-        </footer>
-        <script src="js/fontawesome.js"></script>
-        <script src="js/footerinfo.js"></script>
+        <footer class="footer" id="main-footer"></footer>
         <script src="js/burger.js"></script>
     </body>
 </html>
