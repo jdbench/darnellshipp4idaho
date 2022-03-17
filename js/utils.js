@@ -33,7 +33,7 @@ export function createHeader(){
     <source media="(max-width:600px)" srcset="images/small-logo.png 600w">
     <source media="(max-width:960px)" srcset="images/medium-logo.png 720w">
     <source media="(min-width:960px)" srcset="images/large-logo.png 1920w">
-    <img src="images/logo.png" alt="Darnell Shipp's web campaign logo">
+    <img src="images/logo.png" alt="Darnell Shipp's web campaign logo" width="600" height="450">
 </picture>`;
 }
 
