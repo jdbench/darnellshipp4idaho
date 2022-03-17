@@ -289,6 +289,22 @@ nav ul{
 .donations{
     height: 1400px;
 }
+.thankYou{
+    color: rgb(110, 0, 0);
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("../images/darnell-patriotic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 400px;
+}
+.thankYou h1{
+    margin: 30% 0 0 0;
+    text-shadow: 0px 1px 4px black;
+    font-size: 1.4em;
+}
 /*About page*/
 .darnell-main{
     margin: 0 auto;
