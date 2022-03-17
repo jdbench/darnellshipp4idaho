@@ -1,3 +1,43 @@
+export function createFooterYear(){
+    let d = new Date();
+    let dd = String(d.getDate()).padStart(2, '0');
+    let m = String(d.getMonth() + 1);
+    let yyyy = d.getFullYear();
+    //find span
+    let yearSpan = document.getElementById("year");
+    //place current year in span
+    yearSpan.innerHTML = yyyy;
+}
+
+export function createFooter(){
+    const footer = document.getElementById('main-footer');
+    footer.innerHTML = 
+`<div class="contact-info">
+    <h2 class="learn">Contact Information</h2>
+    <span class="contact-link"><i class="fa fa-envelope"></i><a href="mailto:darnellshipp4idaho@gmail.com">darnellshipp4idaho@gmail.com</a></span>
+    <span class="contact-link"><i class="fa fa-phone"></i><a href="tel:+12082069487">+1(208)206-9487</a></span>
+</div>
+<div class="social-media">
+    <span class="social-link"><i class="fa fa-facebook"></i><a href="https://www.facebook.com/DarnellShipp4Idaho-110510968201345">DarnellShipp4Idaho</a></span>
+</div>
+<div class="footer-info">
+    <p>&copy;<span id="year"></span> | Darnell R. Shipp | Idaho
+</div>`;
+
+}
+
+export function createHeader(){
+    const header = document.getElementById('main-header');
+    header.innerHTML =
+`<picture>
+    <source media="(max-width:600px)" srcset="images/small-logo.png">
+    <source media="(max-width:960px)" srcset="images/medium-logo.png">
+    <source media="(min-width:960px)" srcset="images/large-logo.png">
+    <img src="images/logo.png" alt="campaign logo">
+</picture>`;
+}
+
+export function fontAwesome(){
 window.FontAwesomeKitConfig = {
     "asyncLoading": {
         "enabled": false
@@ -564,3 +604,4 @@ window.FontAwesomeKitConfig = {
     }
 }
 ));
+}
