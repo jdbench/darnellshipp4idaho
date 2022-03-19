@@ -30,10 +30,9 @@ export function createHeader(){
     const header = document.getElementById('main-header');
     header.innerHTML =
 `<picture>
-    <source media="(max-width:600px)" srcset="images/small-logo.png">
-    <source media="(max-width:960px)" srcset="images/medium-logo.png">
-    <source media="(min-width:960px)" srcset="images/large-logo.png">
-    <img src="images/logo.png" alt="Darnell Shipp's web campaign logo" width="600" height="450">
+    <source media="(max-width:600px)" srcset="images/main-small-logo.png">
+    <source media="(max-width:960px)" srcset="images/main-medium-logo.png">
+    <img src="images/main-logo.png" alt="Darnell Shipp's web campaign logo" width="600" height="450">
 </picture>`;
 }
 
