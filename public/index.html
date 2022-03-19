@@ -17,79 +17,96 @@
         gtag('js', new Date());
 
         gtag('config', 'G-M7ZWNB1Z2C');
-</script>
+        </script>
     </head>
     <body>
-        <header class="header" id="main-header"></header>
-        <div id="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="load">
         </div>
-        <nav class="nav">
-            <ul class="main-nav">
-                <li class="nav-item active"><a href="/">Home</a></li>
-                <li class="nav-item"><a href="/donate">Donate</a></li>
-                <li class="nav-item"><a href="/about">About Me</a></li>
-            </ul>
-        </nav>
-        <main class="main">
-            <div class="hero-container">
-                <picture>
-                    <source media="(max-width:600px)" srcset="/images/patriotic-small.jpg">
-                    <source media="(max-width:960px)" srcset="/images/patriotic-medium.jpg">
-                    <img src="/images/patriotic.jpg" alt="Patriotic eagle flying in front of a flowing flag of the United States of America" width="600" height="450">
-                </picture>
-                <div class="hero-text">
-                    <div class="hero-buttons">
-                        <span class="hero-button donate-button"><a class="hero-link" href="donate.html">Donate</a></span>
-                        <!--<span class="hero-button getinvolved-button"><a class="hero-link" href="involve.html">Get Involved</a></span>-->
-                    </div>
-                </div>
+        <script>
+            document.onreadystatechange = function () {
+                var state = document.readyState
+                if (state == 'interactive') {
+                    document.querySelector('.content').style.visibility="hidden";
+                } else if (state == 'complete') {
+                    setTimeout(function(){
+                    document.getElementById('load').style.visibility="hidden";
+                    document.querySelector('.content').style.visibility="visible";
+                    },1000);
+                }
+            }
+        </script>
+        <div class="content">
+            <header class="header" id="main-header"></header>
+            <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="core-values">
-                <div class="core-value">
-                    <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Family First</h2></div>
-                    <div class="value-info">
-                        <h3 class="more-info-heading">Protect the Rights of the Unborn and Children</h3>
-                        <h3 class="more-info-heading">Protect Idaho Family Values</h3>
-                        <h3 class="more-info-heading">Protect Parent's Rights</h3>
+            <nav class="nav">
+                <ul class="main-nav">
+                    <li class="nav-item active"><a href="/">Home</a></li>
+                    <li class="nav-item"><a href="/donate">Donate</a></li>
+                    <li class="nav-item"><a href="/about">About Me</a></li>
+                </ul>
+            </nav>
+            <main class="main">
+                <div class="hero-container">
+                    <picture>
+                        <source media="(max-width:600px)" srcset="/images/patriotic-small.jpg">
+                        <source media="(max-width:960px)" srcset="/images/patriotic-medium.jpg">
+                        <img src="/images/patriotic.jpg" alt="Patriotic eagle flying in front of a flowing flag of the United States of America" width="600" height="450">
+                    </picture>
+                    <div class="hero-text">
+                        <div class="hero-buttons">
+                            <span class="hero-button donate-button"><a class="hero-link" href="donate.html">Donate</a></span>
+                            <!--<span class="hero-button getinvolved-button"><a class="hero-link" href="involve.html">Get Involved</a></span>-->
+                        </div>
                     </div>
                 </div>
-                <div class="core-value">
-                    <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Truth in Education</h2></div>
-                    <div class="value-info">
-                        <h3 class="more-info-heading">Education Not Indoctrination</h3>
-                        <h3 class="more-info-heading">Money Follows Students</h3>
-                        <h3 class="more-info-heading">End Common Core</h3>
+                <div class="core-values">
+                    <div class="core-value">
+                        <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Family First</h2></div>
+                        <div class="value-info">
+                            <h3 class="more-info-heading">Protect the Rights of the Unborn and Children</h3>
+                            <h3 class="more-info-heading">Protect Idaho Family Values</h3>
+                            <h3 class="more-info-heading">Protect Parent's Rights</h3>
+                        </div>
+                    </div>
+                    <div class="core-value">
+                        <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Truth in Education</h2></div>
+                        <div class="value-info">
+                            <h3 class="more-info-heading">Education Not Indoctrination</h3>
+                            <h3 class="more-info-heading">Money Follows Students</h3>
+                            <h3 class="more-info-heading">End Common Core</h3>
+                        </div>
+                    </div>
+                    <div class="core-value">
+                        <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Limited Government</h2></div>
+                        <div class="value-info">
+                            <h3 class="more-info-heading">Medical Freedom</h3>
+                            <h3 class="more-info-heading">Protect Second Amendment</h3>
+                            <h3 class="more-info-heading">Protect First Amendment</h3>
+                        </div>
+                    </div>
+                    <div class="core-value">
+                        <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Strengthen State Sovereignity</h2></div>
+                        <div class="value-info">
+                            <h3 class="more-info-heading">Protect Tenth Amendment</h3>
+                            <h3 class="more-info-heading">Wean Idaho from Federal Funds and Grants</h3>
+                            <h3 class="more-info-heading">Stop Biden/Federal Overreach</h3>
+                        </div>
+                    </div>
+                    <div class="core-value">
+                        <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Strengthen and Prosper Communities</h2></div>
+                        <div class="value-info">
+                            <h3 class="more-info-heading">Protect Local Government</h3>
+                            <h3 class="more-info-heading">Protect Local Law Enforcement and Keep Them Independent</h3>
+                            <h3 class="more-info-heading">Protect the Rule of Law Within the Confines of the U.S. and Idaho State Constitutions</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="core-value">
-                    <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Limited Government</h2></div>
-                    <div class="value-info">
-                        <h3 class="more-info-heading">Medical Freedom</h3>
-                        <h3 class="more-info-heading">Protect Second Amendment</h3>
-                        <h3 class="more-info-heading">Protect First Amendment</h3>
-                    </div>
-                </div>
-                <div class="core-value">
-                    <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Strengthen State Sovereignity</h2></div>
-                    <div class="value-info">
-                        <h3 class="more-info-heading">Protect Tenth Amendment</h3>
-                        <h3 class="more-info-heading">Wean Idaho from Federal Funds and Grants</h3>
-                        <h3 class="more-info-heading">Stop Biden/Federal Overreach</h3>
-                    </div>
-                </div>
-                <div class="core-value">
-                    <div class="core-value-heading"><span class="fa fa-caret-down"></span><h2 class="value">Strengthen and Prosper Communities</h2></div>
-                    <div class="value-info">
-                        <h3 class="more-info-heading">Protect Local Government</h3>
-                        <h3 class="more-info-heading">Protect Local Law Enforcement and Keep Them Independent</h3>
-                        <h3 class="more-info-heading">Protect the Rule of Law Within the Confines of the U.S. and Idaho State Constitutions</h3>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="footer" id="main-footer"></footer>
+            </main>
+            <footer class="footer" id="main-footer"></footer>
+        </div>
     </body>
 </html>

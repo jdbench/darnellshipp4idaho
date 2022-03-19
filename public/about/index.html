@@ -20,6 +20,22 @@
 </script>
     </head>
     <body>
+        <div id="load">
+        </div>
+        <script>
+            document.onreadystatechange = function () {
+                var state = document.readyState
+                if (state == 'interactive') {
+                    document.querySelector('.content').style.visibility="hidden";
+                } else if (state == 'complete') {
+                    setTimeout(function(){
+                    document.getElementById('load').style.visibility="hidden";
+                    document.querySelector('.content').style.visibility="visible";
+                    },1000);
+                }
+            }
+        </script>
+        <div class="content">
         <header class="header" id="main-header"></header>
         <div id="nav-icon">
             <span></span>
@@ -58,5 +74,6 @@
             </div>
         </main>
         <footer class="footer" id="main-footer"></footer>
+        </div>
     </body>
 </html>
