@@ -1,1 +1,14 @@
-import{burger,fontAwesome,createFooterYear,createFooter,createHeader,getUrlParams}from"./utils.js";document.addEventListener("DOMContentLoaded",function(){createHeader(),createFooter(),createFooterYear(),fontAwesome(),burger()});let donorName=getUrlParams('name');let donationAmount=getUrlParams('amount');let donOut=document.getElementById('donation-text');donOut.innerHTML=`${donorName}, thank you for your donation of $${donationAmount}!`
+import {burger, fontAwesome, createFooterYear, createFooter, createHeader} from "./utils.js";
+document.addEventListener("DOMContentLoaded", function() {
+    createHeader(),
+    createFooter(),
+    createFooterYear(),
+    fontAwesome(),
+    burger()
+});
+const args = new URLSearchParams(document.location.search);
+let name = args.get('name');
+name = name.charAt(0).toUpperCase() + name.slice(1);
+const amount = args.get('amount');
+let donOut = document.getElementById('donation-text');
+donOut.innerHTML = `${name}, thank you for your donation of $${amount}!`
