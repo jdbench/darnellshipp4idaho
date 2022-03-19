@@ -43,7 +43,7 @@ export function burger(){
 	});
 }
 //dropdown core values
-export function dropdownText(element){
+export async function dropdownText(element){
         element.addEventListener('click', function(){
             this.parentNode.getElementsByTagName('div')[1].classList.toggle('expanded');  
             this.parentNode.getElementsByTagName('div')[1].classList.toggle('value-info');
