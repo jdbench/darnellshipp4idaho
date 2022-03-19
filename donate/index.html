@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Thank You | Darnell for Idaho</title>
-        <link rel="icon" type="image/x-icon" href="images/main-favicon.png">
+        <title>Donate | Darnell for Idaho</title>
+        <link rel="icon" type="image/x-icon" href="/images/main-favicon.png">
         <meta name="description" content="Donation page for Darnell Shipp's candidacy"/>
-        <link rel="stylesheet" href="css/normalize.css"/>
-        <link rel="stylesheet" href="css/css.css"/>
-        <script src="js/thankYou.js" type="module"></script>
+        <link rel="stylesheet" href="/css/normalize.css"/>
+        <link rel="stylesheet" href="/css/style.min.css"/>
+        <script src="/js/donate.js" type="module"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M7ZWNB1Z2C"></script>
         <script>
@@ -28,16 +28,15 @@
         </div>
         <nav class="nav">
             <ul class="main-nav">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="donate.html">Donate</a></li>
-                <li class="nav-item"><a href="about.html">About Me</a></li>
+                <li class="nav-item"><a href="/index.html">Home</a></li>
+                <li class="nav-item active"><a href="/donate/index.html">Donate</a></li>
+                <li class="nav-item"><a href="/about/index.html">About Me</a></li>
             </ul>
         </nav>
-        <main class="thankYou">
-            <div>
-                <img src="images/darnell-patriotic.jpg" width="800" height="600">
-                <h1>Thank you for your donation!</h1>
-            </div>
+        <main class="donations">
+            <script src="https://rallypay.com/v1/widget_token_donate.js" type="text/javascript"></script>
+            <!-- / RallyPay donation meter BEGIN -->
+            <iframe width="100%" height="100%" frameborder="0" id="iframeid" name="https://rallypay.com/covers/8fX1xcjsKLq/widget_tokenDonate" src=""></iframe>
         </main>
         <footer class="footer" id="main-footer"></footer>
     </body>
