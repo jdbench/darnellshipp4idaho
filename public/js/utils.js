@@ -24,6 +24,17 @@ export async function dropdownText(t) {
         this.querySelector("span").classList.toggle("rotated-caret")
     })
 }
+export function onReadyStateChange(element) {
+    var state = document.readyState
+    if (state == 'interactive') {
+        element.style.visibility="hidden";
+    } else if (state == 'complete') {
+        setTimeout(function(){
+        document.getElementById('load').style.visibility="hidden";
+        element.style.visibility="visible";
+        },1000);
+    }
+}
 export function docReady(t) {
     "complete" === document.readyState || "interactive" === document.readyState ? setTimeout(t, 1) : document.addEventListener("DOMContentLoaded", t)
 }

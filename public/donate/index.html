@@ -22,6 +22,19 @@
     <body>
         <div id="load">
         </div>
+        <header class="header" id="main-header"></header>
+        <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav">
+            <ul class="main-nav">
+                <li class="nav-item"><a href="/">Home</a></li>
+                <li class="nav-item active"><a href="/donate">Donate</a></li>
+                <li class="nav-item"><a href="/about">About Me</a></li>
+            </ul>
+        </nav>
         <script>
             document.onreadystatechange = function () {
                 var state = document.readyState
@@ -36,19 +49,6 @@
             }
         </script>
         <div class="content">
-        <header class="header" id="main-header"></header>
-        <div id="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="nav">
-            <ul class="main-nav">
-                <li class="nav-item"><a href="/">Home</a></li>
-                <li class="nav-item active"><a href="/donate">Donate</a></li>
-                <li class="nav-item"><a href="/about">About Me</a></li>
-            </ul>
-        </nav>
         <main class="donations">
             <script src="https://rallypay.com/v1/widget_token_donate.js" type="text/javascript"></script>
             <!-- / RallyPay donation meter BEGIN -->
